@@ -1,6 +1,7 @@
-<h1>{{announcement.type}} </h1>
-<h2>{{announcement.head}}</h2>
-<div class="well">
-  {{announcement.body}}
-</div>
-<a href={{announcement.link}}>{{announcement.link}}</a>
+<li>
+  <div class="bold">
+    {{announcement.info}} {{announcement.date}}
+  </div><br>
+
+  <button class="btn btn-danger btn-md" {{action 'delete' announcement}}>Delete</button>
+</li>
