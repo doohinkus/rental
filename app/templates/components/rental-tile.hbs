@@ -7,11 +7,11 @@
       <img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}} width="300px"/>
     </p>
     <p>
-      <button {{action 'imageHide'}}>Hide Image</button>
+      <button class="btn btn-primary"{{action 'imageHide'}}>Hide Image</button>
     </p>
     {{else}}
     <p>
-      <button {{action 'imageShow'}}>Show Image</button>
+      <button class="btn btn-primary"{{action 'imageShow'}}>Show Image</button>
     </p>
   {{/if}}
 </li>
