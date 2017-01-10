@@ -3,15 +3,9 @@
   {{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}}{{/link-to}}
 
   {{#if isImageShowing}}
-    <p>
-      <img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}} width="300px"/>
-    </p>
-    <p>
-      <button class="btn btn-primary"{{action 'imageHide'}}>Hide Image</button>
-    </p>
-    {{else}}
-    <p>
-      <button class="btn btn-primary"{{action 'imageShow'}}>Show Image</button>
-    </p>
+    <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}} width="300px"/></p>
+    <button class="btn btn-primary"{{action 'imageHide'}}>Hide Image</button>
+    {{else}}<br>
+    <button class="btn btn-primary"{{action 'imageShow'}}>Show Image</button>
   {{/if}}
 </li>
