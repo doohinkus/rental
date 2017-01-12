@@ -1,8 +1,9 @@
 <h2>More information about {{model.owner}}'s {{model.type}}</h2>
+{{new-review saveReview="saveReview" rental=model}}
 
 
 
 {{update-rental rental=model update="update"}}
 
 <!-- rental-detail component is loaded below -->
-{{rental-detail rental=model destroyRental="destroyRental"}}
+{{rental-detail rental=model destroyRental="destroyRental" destroyReview="destroyReview"}}
